@@ -5,12 +5,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+    }
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      // @media @phone {
+      //   display: flex;
+      //   flex-direction: column;
+      // }
     }
 
     .img-content {
@@ -26,6 +36,9 @@
   .inverse-content {
     padding-bottom: 30px;
     .border-bot();
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -57,7 +70,7 @@
       width: 30%;
       margin-bottom: 30px;
       .btn {
-        .button();
+        .button(teal,white,200px);
       }
     }
   }
@@ -65,16 +78,16 @@
 
 header {
   display: flex;
-  .border-bot();
   width: 100%; 
   justify-content: space-between;
   margin-top: 5%;
+  .border-bot();
   
-
   div{
     display: flex;
     width: 30%;
     padding-bottom: 3%;
+    margin-left: 15%;
   }
   
 
@@ -87,8 +100,5 @@ header {
 
   .bus-top {
     margin-bottom: 3%;
-    
   }
-  
-  
 }

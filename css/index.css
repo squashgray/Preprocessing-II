@@ -158,7 +158,6 @@ p,
 a {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
 }
 img {
   max-width: 100%;
@@ -172,7 +171,8 @@ img {
 nav {
   display: flex;
   justify-content: space-evenly;
-  width: 45%;
+  width: 38%;
+  margin-right: 13%;
 }
 nav a {
   display: flex;
@@ -197,6 +197,13 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
@@ -211,6 +218,11 @@ nav a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -250,15 +262,16 @@ nav a {
 }
 header {
   display: flex;
-  border-bottom: 2px dashed #C0C0C0;
   width: 100%;
   justify-content: space-between;
   margin-top: 5%;
+  border-bottom: 2px dashed #C0C0C0;
 }
 header div {
   display: flex;
   width: 30%;
   padding-bottom: 3%;
+  margin-left: 15%;
 }
 .intro-section {
   padding-bottom: 2%;

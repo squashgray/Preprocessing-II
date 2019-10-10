@@ -3,20 +3,25 @@
     border-bottom: 2px dashed @navigation-border;
 }
 
+
 .centered() {
     justify-content: center;
     align-items: center;
 }
+ 
+//PARAMETRIC MIXIN //
 
-.button() {
-    background-color: teal;
+.button(@bg-color, @txt-color, @width) {
+    background-color: @bg-color;
     cursor: pointer;
-    width: 200px;
+    width: @width;
     height: 45px;
     font-size: 2rem;
     border-radius: 10px;
-    color: white;
+    color: @txt-color;
     text-align: center;
     padding-top: 5%;
     
 }
+
+@phone: ~"(max-width: 500px)";
