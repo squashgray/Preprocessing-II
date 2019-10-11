@@ -1,1 +1,27 @@
 // Mixins in here
+.border-bot() {
+    border-bottom: 2px dashed @navigation-border;
+}
+
+
+.centered() {
+    justify-content: center;
+    align-items: center;
+}
+ 
+//PARAMETRIC MIXIN //
+
+.button(@bg-color, @txt-color, @width) {
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @txt-color;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    
+}
+
