@@ -8,8 +8,7 @@
     @media @phone {
       display: flex;
       flex-direction: column;
-      width: 100%;
-
+      
     }
 
    
@@ -17,15 +16,19 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      // @media @phone {
-      //   display: flex;
-      //   flex-direction: column;
-      // }
+      @media @phone {
+        width: 80%;
+        margin: 0 auto;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @phone {
+        width: 80%;
+        margin: 0 auto;
+      }
 
       img {
         border-radius: 10px;
@@ -37,27 +40,44 @@
     padding-bottom: 30px;
     .border-bot();
     @media @phone {
+      margin: 0 auto;
       flex-direction: column-reverse;
+      width: 80%;
     }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @phone {
+        width:100%;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      @media @phone {
+        width:100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @phone {
+      margin: 0 auto;
+      width: 80%;
+      .border-bot();
+      padding-bottom: 5%;
+      padding-top: 5%;
+      
+    }
 
     img {
       border-radius: 10px;
     }
+    
   }
 
   .content-pick {
@@ -65,12 +85,31 @@
     .border-bot();
     display: flex;
     justify-content: space-between;
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
       .btn {
         .button(teal,white,200px);
+      }
+      @media @phone {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 5%;
+        .btn {
+          .button(@eastern-blue,white, 100%);
+        }
+        
+      }
+      p {
+        @media @phone {
+          padding-bottom: 3%;
+        }
       }
     }
   }
@@ -82,12 +121,27 @@ header {
   justify-content: space-between;
   margin-top: 5%;
   .border-bot();
+  @media @phone {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    
+  }
+
   
   div{
     display: flex;
     width: 30%;
     padding-bottom: 3%;
     margin-left: 15%;
+    @media @phone {
+      width: 100%;
+      margin: 0 auto;
+      .centered();
+      margin-top: 5%;
+    }
+
   }
   
 
@@ -97,6 +151,13 @@ header {
 .intro-section {
   padding-bottom: 2%;
   .border-bot();
+  @media @phone {
+    width: 80%;
+    .centered();
+    margin: 0 auto;
+    padding-bottom: 5%;
+    
+  }
 
   .bus-top {
     margin-bottom: 3%;
